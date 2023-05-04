@@ -1,0 +1,133 @@
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+}
+
+.requested-product,
+.delivery-instructions,
+.total-shipments,
+.delivery-history,
+.pending-packages {
+	border: 1px solid #ccc;
+	margin: 20px;
+	padding: 20px;
+}
+
+.requested-product h2,
+.delivery-instructions h2,
+.total-shipments h2,
+.delivery-history h2,
+.pending-packages h2 {
+	margin-top: 0;
+	font-size: 24px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.requested-product p,
+.pending-packages ul {
+	margin: 0;
+	padding: 0;
+}
+
+.requested-product span,
+.pending-packages li {
+	font-weight: bold;
+	font-size: 18px;
+	color: #333;
+}
+
+.delivery-instructions p {
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+.delivery-history ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.delivery-history li {
+	margin-bottom: 10px;
+}
+
+.delivery-history li:last-child {
+	margin-bottom: 0;
+}
+
+.delivery-history li:first-child {
+	font-weight: bold;
+}
+
+.delivery-history li:nth-child(2) {
+	font-style: italic;
+}
+
+.delivery-history li:nth-child(3) {
+	font-style: italic;
+}
+
+.delivery-history li:nth-child(4) {
+	color: green;
+	font-weight: bold;
+}
+
+.pending-packages li:last-child {
+	margin-bottom: 0;
+}
+
+.pending-packages li:nth-child(2) {
+	font-weight: bold;
+	font-size: 18px;
+	color: #333;
+}
+
+.pending-packages li:nth-child(3) {
+	font-style: italic;
+	font-size: 16px;
+	color: #666;
+}
+
+.pending-packages li:last-child {
+	color: blue;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+/* Hovering effects */
+
+.requested-product:hover,
+.delivery-instructions:hover,
+.total-shipments:hover,
+.delivery-history:hover,
+.pending-packages:hover {
+	box-shadow: 4px 4px 13px rgba(0, 0, 0, 0.1);
+	transform: translateY(-5px);
+}
+
+.requested-product:hover h2,
+.delivery-instructions:hover h2,
+.total-shipments:hover h2,
+.delivery-history:hover h2,
+.pending-packages:hover h2 {
+	color: #333;
+}
+
+.pending-packages:hover li:last-child {
+	color: #0066cc;
+}
+
+.pending-packages:hover li:nth-child(2) {
+	color: #333;
+}
+
+.pending-packages:hover li:nth-child(3) {
+	color: #666;
+}
+
+.pending-packages:hover li:last-child:before {
+	content: "\2192 ";
+}

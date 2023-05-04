@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Credit/Debit Card Payment</title>
+	<style>
+		body {
+			background-image: url("pot.jpg");
+			background-size: cover;
+			background-position: center center;
+			font-family: Arial, sans-serif;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+		}
+		h1 {
+			color:black;
+			text-align: center;
+			margin-top: 100px;
+            text-shadow: 1px 1px 1px #000000;
+		}
+
+		
+		form {
+			background-color: rgba(255, 255, 255, 0.8);
+			border-radius: 5px;
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+			padding: 20px;
+			width: 400px;
+			text-align: center;
+		}
+
+		input[type="text"], input[type="number"] {
+			width: 150%;
+			padding: 12px 20px;
+			margin: 8px 8px;
+			display: inline-block;
+			border: 2px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+		}
+
+		label {
+			display: block;
+			text-align: left;
+			margin-top: 20px;
+		}
+
+		.row {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+
+		.row input {
+			flex-grow: 1;
+			margin: 0 10px;
+		}
+
+		button {
+			background-color: #4CAF50;
+			border: none;
+			color: white;
+			padding: 14px 20px;
+			margin: 20px 0;
+			cursor: pointer;
+			border-radius: 4px;
+			width: 100%;
+		}
+
+		button:hover {
+			background-color: #45a049;
+		}
+	</style>
+</head>
+<body>
+	<form>
+		<h2>Credit/Debit Card Payment</h2>
+		<div class="row">
+			<div class="col">
+				<label for="name">Cardholder's Name</label>
+				<input type="text" id="name" name="name" placeholder="john wick" required>
+			</div>
+			<div class="col">
+				<label for="card-number">Card Number</label>
+				<input type="number" id="card-number" name="card-number" placeholder="110-890-890" requiredrequired>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col">
+				<label for="expiry-date">Expiry Date</label>
+				<input type="text" id="expiry-date" name="expiry-date" placeholder="MM / YY" required>
+			</div>
+			<div class="col">
+				<label for="cvc">CVC</label>
+				<input type="number" id="cvc" name="cvc" placeholder="567899"required>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col">
+				<label for="amount">Amount</label>
+				<input type="number" id="amount" name="amount"placeholder="$500" required>
+			</div>
+		</div>
+		<button type="submit">Submit</button>
+	</form>
+</body>
+</html>
